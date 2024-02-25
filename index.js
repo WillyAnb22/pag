@@ -1,32 +1,32 @@
 const articulo = [
     {
         name: "Planta",
-        precio: $17.000,
+        precio: 17.000,
         img: "./img/pla1.png",
     },
     {
         name: "Girasol",
-        precio: $30.000,
+        precio: 30.000,
         img: "./img/pla2.png",
     },
     {
         name: "PLANTA",
-        precio: $20.000,
+        precio: 20.000,
         img: "./img/pla3.png",
     },
     {
         name: "PALMERA",
-        precio: $100.000,
+        precio: 100.000,
         img: "./img/pla4.png",
     },
     {
         name: "CACTUS",
-        precio: $15.000,
+        precio: 15.000,
         img: "./img/pla5.png",
     },
     {
         name: "PLANTA",
-        precio: $12.000,
+        precio: 12.000,
         img: "./img/pla6.png",
     },
 ];
