@@ -57,39 +57,39 @@ function enviar(nombre, precio, img) {
     data.push(datos);
     pintar();
 }
-function pintar() {
-    let tableBody = document.getElementById("listadatos");
-    while (tableBody.firstChild) {
-        tableBody.removeChild(tableBody.firstChild);
-    }
-    data.forEach((item, i) => {
-        let fila = document.createElement("tr");
+// function pintar() {
+//     let tableBody = document.getElementById("listadatos");
+//     while (tableBody.firstChild) {
+//         tableBody.removeChild(tableBody.firstChild);
+//     }
+//     data.forEach((item, i) => {
+//         let fila = document.createElement("tr");
 
-        let titulo = document.createElement("td");
-        titulo.textContent = item.nombre;
-        fila.appendChild(titulo);
+//         let titulo = document.createElement("td");
+//         titulo.textContent = item.nombre;
+//         fila.appendChild(titulo);
 
-        let precio = document.createElement("td");
-        precio.textContent = item.precio * item.cantidad;
-        fila.appendChild(precio);
+//         let precio = document.createElement("td");
+//         precio.textContent = item.precio * item.cantidad;
+//         fila.appendChild(precio);
 
-        let imagen = document.createElement("td");
-        let img = document.createElement("img");
-        img.src = item.img;
-        imagen.appendChild(img);
-        fila.appendChild(imagen);
+//         let imagen = document.createElement("td");
+//         let img = document.createElement("img");
+//         img.src = item.img;
+//         imagen.appendChild(img);
+//         fila.appendChild(imagen);
 
 
-        let cantidad = document.createElement("td");
-        cantidad.textContent =item.cantidad
-        fila.appendChild(cantidad);
+//         let cantidad = document.createElement("td");
+//         cantidad.textContent =item.cantidad
+//         fila.appendChild(cantidad);
 
-        let boton = document.createElement("button")
-        boton.textContent = "x"
-        fila.appendChild(boton)
-        document.getElementById("listadatos").appendChild(fila);
-    });
-}
+//         let boton = document.createElement("button")
+//         boton.textContent = "x"
+//         fila.appendChild(boton)
+//         document.getElementById("listadatos").appendChild(fila);
+//     });
+// }
 
 let card = document.getElementById("card-template");
 articulo.forEach((x, index) => {
