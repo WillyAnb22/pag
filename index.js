@@ -108,3 +108,10 @@ articulo.forEach((x, index) => {
             </div>
             `;
 });
+
+let carrito = [];
+const divisa = '€';
+const DOMitems = document.querySelector('#items');
+const DOMcarrito = document.querySelector('#carrito');
+const DOMtotal = document.querySelector('#total');
+const DOMbotonVaciar = document.querySelector('#boton-vaciar');
