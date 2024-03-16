@@ -29,23 +29,75 @@
     margin-left: 93%;
     position: fixed;
 }
-
-.card-body {
-    background-color: rgb(0, 227, 227);
-    padding: 20px; /* Ajusta el relleno para aumentar el tamaño de la tarjeta */
-}
-
 .carrito-imagen {
-    max-width: 100px; /* Ajusta el tamaño máximo de la imagen del carrito */
-    height: auto; /* mantiene la proporción */
+    max-width: 100px; /*Ajusta el tamaño máximo de la imagen del carrito
+    height: auto; mantiene la proporción */
 }
-/* Anular estilos de Bootstrap para las tarjetas */
-.card {
-    border: none;
-    /* Otros estilos que quieras anular */
+/* Estilo para el contenedor de las tarjetas */
+#items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar las tarjetas horizontalmente */
 }
 
-.card-body {
-    padding: 0; /* Anula el relleno predeterminado */
-    /* Otros estilos que quieras anular */
+/* Estilo para las tarjetas */
+.card {
+    background-color: #e0f2f1; /* Color de fondo verde claro */
+    border-radius: 15px; /* Bordes redondeados */
+    margin: 20px; /* Espacio alrededor de las tarjetas */
+    padding: 20px; /* Espacio interno de las tarjetas */
+    width: calc(33.33% - 40px); /* Ancho de las tarjetas (ajustable según el número de tarjetas por fila) */
+    text-align: center; /* Centrar el contenido de las tarjetas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.card-title {
+    font-family: 'Arial', sans-serif; /* Fuente de letra elegante */
+    font-size: 1.5em; /* Tamaño de fuente */
+    color: #333; /* Color de texto */
+}
+
+.card-text {
+    font-family: 'Arial', sans-serif; /* Fuente de letra elegante */
+    color: #666; /* Color de texto */
+}
+
+/* Media query para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 40px); /* Ancho de las tarjetas en dispositivos más pequeños */
+    }
+}
+/* Estilo para las tarjetas del carrito */
+.list-group-item {
+    background-color: #e0f2f1; /* Color de fondo verde claro */
+    border: none; /* Eliminar borde */
+    border-radius: 15px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+    padding: 20px; /* Espacio interno de las tarjetas */
+}
+
+/* Estilo para la imagen dentro de las tarjetas del carrito */
+.carrito-imagen {
+    max-width: 100px; /* Tamaño máximo de la imagen */
+    height: auto; /* Mantener la proporción */
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
+}
+
+/* Estilo para el texto dentro de las tarjetas del carrito */
+.list-group-item span {
+    font-family: 'Arial', sans-serif; /* Fuente de letra elegante */
+    color: #333; /* Color de texto */
+}
+
+/* Estilo para el botón de eliminar dentro de las tarjetas del carrito */
+.list-group-item button {
+    font-family: 'Arial', sans-serif; /* Fuente de letra elegante */
+}
+
+/* Media query para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .list-group-item {
+        width: 100%; /* Ancho completo en dispositivos más pequeños */
+    }
 }
