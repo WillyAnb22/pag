@@ -15,7 +15,8 @@
     align-items: center;
     font-family: Arial, sans-serif;
 }
-#titulo{
+
+#titulo {
     color: white;
     text-align: center;
     font-size: 3em;
@@ -29,20 +30,22 @@
     position: fixed;
 }
 
-.col{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.card-body{
+.card-body {
     background-color: rgb(0, 227, 227);
-}
-th, td{
-    border: 2px solid blue
+    padding: 20px; /* Ajusta el relleno para aumentar el tamaño de la tarjeta */
 }
 
-
-.imga {
-    height: 400px;
+.carrito-imagen {
+    max-width: 100px; /* Ajusta el tamaño máximo de la imagen del carrito */
+    height: auto; /* mantiene la proporción */
+}
+/* Anular estilos de Bootstrap para las tarjetas */
+.card {
+    border: none;
+    /* Otros estilos que quieras anular */
 }
 
+.card-body {
+    padding: 0; /* Anula el relleno predeterminado */
+    /* Otros estilos que quieras anular */
+}
