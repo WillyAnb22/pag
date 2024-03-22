@@ -2,56 +2,56 @@ const baseDeDatos = [
     {
         id: 1,
         name: "Lantana Blanca",
-        precio: 1200,
-        img: "./img/pla1.png"
+        precio: 20000,
+        img: "./img/1.png"
     },
     {
         id: 2,
         name: "Girasol",
-        precio: 1200,
-        img: "./img/pla2.png"
+        precio: 15000,
+        img: "./img/2.png"
     },
     {
         id: 3,
         name: "Orquidea",
-        precio: 1200,
-        img: "./img/pla3.png",
+        precio: 18000,
+        img: "./img/3.png",
     },
     {
         id: 4,
         name: "PALMERA",
-        precio: 1200,
-        img: "./img/pla4.png",
+        precio: 30000,
+        img: "./img/4.png",
     },
     {
         id: 5,
         name: "CACTUS",
-        precio: 1200,
-        img: "./img/pla5.png"
+        precio: 12000,
+        img: "./img/5.png"
     },
     {
         id: 6,
         name: "Anturio Rojo",
-        precio: 1200,
-        img: "./img/pla6.png",
+        precio: 15000,
+        img: "./img/6.png",
     },
     {
         id: 7,
         name: "Suculenta",
-        precio: 1200,
-        img: "./img/pla7.png",
+        precio: 10000,
+        img: "./img/7.png",
     },
     {
         id: 8,
         name: "Margarita",
-        precio: 1200,
-        img: "./img/pla8.png",
+        precio: 15000,
+        img: "./img/8.png",
     },
     {
         id: 9,
         name: "Jazmin",
-        precio: 1200,
-        img: "./img/pla9.png",
+        precio: 18000,
+        img: "./img/9.png",
     },
 ];
 
@@ -71,7 +71,7 @@ function renderizarProductos() {
     baseDeDatos.forEach((info) => {
         // Estructura
         const miNodo = document.createElement('div');
-        miNodo.classList.add('card', 'col-sm-4');
+        miNodo.classList.add('card', 'col-s');
         // Body
         const miNodoCardBody = document.createElement('div');
         miNodoCardBody.classList.add('card-body');
@@ -251,4 +251,9 @@ DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 // Inicio
 renderizarProductos();
 renderizarCarrito();
+// const cuentaCarritoElement = document.getElementById("cuenta-carrito");
+// function actualizarNumeroCarrito() {
+//     const memoria =
+// }
+
 
