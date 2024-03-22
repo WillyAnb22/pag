@@ -5,21 +5,25 @@
     text-transform: capitalize;
     letter-spacing: .5px;
 }
-
+body{
+    background-color: antiquewhite;
+}
 .baner {
     width: 100%;
     height: 25vh;
     display: flex;
-    background-color: green;
+    background-image: url('/img/fondo-banner.jpg');
     justify-content: center;
+    background-size: cover;
     align-items: center;
     font-family: Arial, sans-serif;
 }
 
 #titulo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
     text-align: center;
-    font-size: 3em;
+    font-size: 500%;
     line-height: 80px;
 }
 
@@ -33,6 +37,13 @@
     max-width: 100px; /*Ajusta el tamaño máximo de la imagen del carrito
     height: auto; mantiene la proporción */
 }
+#cuenta-carrito{
+    text-decoration: none;
+    color: chartreuse;
+    margin-left: 1280px;
+    margin-top: -7%;
+    position: fixed;
+}
 /* Estilo para el contenedor de las tarjetas */
 #items {
     display: flex;
@@ -42,13 +53,14 @@
 
 /* Estilo para las tarjetas */
 .card {
-    background-color: #e0f2f1; /* Color de fondo verde claro */
-    border-radius: 15px; /* Bordes redondeados */
-    margin: 20px; /* Espacio alrededor de las tarjetas */
-    padding: 20px; /* Espacio interno de las tarjetas */
+    background-color: #e0f2f1; 
+    border-radius: 15px; 
+    margin: 20px; 
+    padding: 20px; 
     width: calc(33.33% - 40px); /* Ancho de las tarjetas (ajustable según el número de tarjetas por fila) */
-    text-align: center; /* Centrar el contenido de las tarjetas */
+    text-align: center; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    
 }
 
 .card-title {
@@ -56,7 +68,6 @@
     font-size: 1.5em; /* Tamaño de fuente */
     color: #333; /* Color de texto */
 }
-
 .card-text {
     font-family: 'Arial', sans-serif; /* Fuente de letra elegante */
     color: #666; /* Color de texto */
@@ -78,11 +89,7 @@
 }
 
 /* Estilo para la imagen dentro de las tarjetas del carrito */
-.carrito-imagen {
-    max-width: 100px; /* Tamaño máximo de la imagen */
-    height: auto; /* Mantener la proporción */
-    margin-right: 20px; /* Espacio a la derecha de la imagen */
-}
+/*  */
 
 /* Estilo para el texto dentro de las tarjetas del carrito */
 .list-group-item span {
@@ -101,3 +108,4 @@
         width: 100%; /* Ancho completo en dispositivos más pequeños */
     }
 }
+
